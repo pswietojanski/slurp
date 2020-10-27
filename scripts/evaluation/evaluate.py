@@ -135,6 +135,4 @@ if __name__ == "__main__":
                          errors=args.errors,
                          table_layout=args.table_layout), "\n")
 
-    for i in gold_examples:
-        print(i)
     logger.warning("Gold examples not predicted: {} (out of {})".format(len(gold_examples), n_gold_examples))
