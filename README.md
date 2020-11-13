@@ -10,9 +10,9 @@ This repository contains textual SLURP data and some additional resources allowi
 ## Brief overview
 
 
-1. Each SLURP entry has the following structure (or similar), that contains NLU annotations and allows to link with audio files, as well as the corresponding metadata information. 
-    * Note that `wer` (Word Error Rate) and `ent_wer` (Entit WER) fields for each recording were obtained automatically by scoring the ASR hypotheses with expected ground truths. In the paper we used all SLURP entries to train ASR systems (including ones where `wer>0`, but feel free to use this field to filter out uncertain recordings.
-    * Naming convention for audio files encodes close and distant microphones (`-headset` suffix denotes close-talk mics)
+1. Each SLURP entry has the following structure. It contains NLU annotations and information allowing to link with audio files, as well as the corresponding metadata information. 
+    * Note that `wer` (Word Error Rate) and `ent_wer` (Entity WER) fields for each recording were obtained automatically by scoring the ASR hypotheses against expected ground truths. In the paper we used all SLURP entries to train ASR systems (including ones where `wer>0`, but feel free to use this field to filter out less certain recordings.
+    * Naming convention for audio files encodes close and distant microphones (`-headset` suffix denotes close-talk variant)
 
 ```
 {
@@ -109,9 +109,9 @@ This repository contains textual SLURP data and some additional resources allowi
 }
 ```
 
-2. Each above SLURP record has a corresponding metadata entry in `dataset/slurp/metadata.json`, providing more information on selected items. 
-    * Many fields are for our internal use to link SLURP entries to raw data (can be igonored). 
-    * Some, however may be of use. For example, `usrid` field encodes speaker's gender and primary language (native / non-native). The encoding follows the pattern `GenderLanguage-Id`, where `Gender` could be either `F` (Female), `M` (Male) or `UNK` (Unknown). Language is either `E` (native English speaker) or `O` (native of Other langauge than English). `Id` is a uniq three-digit number, does not carry any meaningul information. As such `FE-488` is the recording uttered by a female participant whose English is a native language.
+2. Each SLURP record (as above) has the corresponding metadata entry in `dataset/slurp/metadata.json`, providing more information on selected items. 
+    * Many fields are for our internal use to link SLURP entries to raw database (can be igonored). 
+    * Some, however, may be of use. For example, `usrid` field encodes speaker's gender and primary language (native / non-native). The encoding follows the pattern `GenderLanguage-Id`, where `Gender` could be either `F` (Female), `M` (Male) or `UNK` (Unknown). Language is either `E` (native English speaker) or `O` (native of Other langauge than English). `Id` is a uniq three-digit number, does not carry any meaningul information. As such `FE-488` is the recording uttered by a female participant whose English is a native language.
 
 ```
 "4489": {
