@@ -9,12 +9,10 @@ This repository contains textual SLURP data and some additional resources allowi
 
 ## Brief overview
 
-1. Mention data organisation
 
-```
-```
-
-2. Each slurp entry looks something like below, you can acces
+1. Each SLURP entry has the following structure (or similar), that contains NLU annotations and allows to link with audio files, as well as the corresponding metadata information. 
+  * Note that `wer` (Word Error Rate) and `ent_wer` (Entit WER) fields for each recording were obtained automatically by scoring the ASR hypotheses with expected ground truths. In the paper we used all SLURP entries to train ASR systems (including ones where `wer>0`, but feel free to use this field to filter out uncertain recordings.
+  * Naming convention for audio files encodes close and distant microphones (`-headset` suffix denotes close-talk mics)
 
 ```
 {
@@ -111,17 +109,59 @@ This repository contains textual SLURP data and some additional resources allowi
 }
 ```
 
-3. Explain metadata entry a bit?
+2. Each above SLURP record has a corresponding metadata entry in `dataset/slurp/metadata.json`, providing more information on selected items. 
+    * Many fields are for our internal use to link SLURP entries to raw data (can be igonored). 
+    * Some, however may be of use. For example, `usrid` field encodes speaker's gender and primary language (native / non-native). The encoding follows the pattern `GenderLanguage-Id`, where `Gender` could be either `F` (Female), `M` (Male) or `UNK` (Unknown). Language is either `E` (native English speaker) or `O` (native of Other langauge than English). `Id` is a uniq three-digit number, does not carry any meaningul information. As such `FE-488` is the recording uttered by a female participant whose English is a native language.
 
 ```
+"4489": {
+        "nlub_id": 5027,
+        "recordings": {
+            "audio--1504194195-headset.flac": {
+                "ansid": 17555,
+                "recid": 50412,
+                "status": "correct",
+                "usrid": "FO-488"
+            },
+            "audio--1504194195.flac": {
+                "ansid": 17555,
+                "recid": 50412,
+                "status": "correct",
+                "usrid": "FO-488"
+            },
+            "audio-1492784000-headset.flac": {
+                "ansid": 17555,
+                "recid": 20567,
+                "status": "correct",
+                "usrid": "UNK-323"
+            },
+            "audio-1492784000.flac": {
+                "ansid": 17555,
+                "recid": 20567,
+                "status": "correct",
+                "usrid": "UNK-323"
+            },
+            "audio-1502099775-headset.flac": {
+                "ansid": 17555,
+                "recid": 43759,
+                "status": "correct",
+                "usrid": "FO-460"
+            },
+            "audio-1502099775.flac": {
+                "ansid": 17555,
+                "recid": 43759,
+                "status": "correct",
+                "usrid": "FO-460"
+            }
+        },
+        "sentence_normalised": "wake me up at eight o'clock",
+        "sentence_original": "wake me up at eight o'clock",
+        "status": "correct",
+        "userid_amt": "682"
+    }
 ```
 
-4. Perhaps a sentence on audio data
-
-## Reproducing results
-
-1. ASR
-2. NLU
+3. Audio data. Once downloaded you will find two directories `slurp_real` and `slurp_synth` under `audio` directory in the root of the repo. The files are compressed with Free Lossles Audio Codec [FLAC] (https://en.wikipedia.org/wiki/FLAC). 
 
 ## Citation
 
