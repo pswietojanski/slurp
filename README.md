@@ -161,7 +161,7 @@ This repository contains textual SLURP data and some additional resources allowi
     }
 ```
 
-3. Audio data. Once downloaded you will find two directories `slurp_real` and `slurp_synth` under `audio` directory in the root of the repo. The files are compressed with Free Lossles Audio Codec [FLAC] (https://en.wikipedia.org/wiki/FLAC). 
+3. Audio data. Once downloaded you will find two directories `slurp_real` and `slurp_synth` under `audio` directory in the root of the repo. The files are compressed with Free Lossles Audio Codec [FLAC](https://en.wikipedia.org/wiki/FLAC). 
 
 ## Citation
 
