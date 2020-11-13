@@ -11,8 +11,8 @@ This repository contains textual SLURP data and some additional resources allowi
 
 
 1. Each SLURP entry has the following structure (or similar), that contains NLU annotations and allows to link with audio files, as well as the corresponding metadata information. 
-  * Note that `wer` (Word Error Rate) and `ent_wer` (Entit WER) fields for each recording were obtained automatically by scoring the ASR hypotheses with expected ground truths. In the paper we used all SLURP entries to train ASR systems (including ones where `wer>0`, but feel free to use this field to filter out uncertain recordings.
-  * Naming convention for audio files encodes close and distant microphones (`-headset` suffix denotes close-talk mics)
+    * Note that `wer` (Word Error Rate) and `ent_wer` (Entit WER) fields for each recording were obtained automatically by scoring the ASR hypotheses with expected ground truths. In the paper we used all SLURP entries to train ASR systems (including ones where `wer>0`, but feel free to use this field to filter out uncertain recordings.
+    * Naming convention for audio files encodes close and distant microphones (`-headset` suffix denotes close-talk mics)
 
 ```
 {
