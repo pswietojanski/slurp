@@ -1,11 +1,11 @@
 # SLURP: A Spoken Language Understanding Resource Package
 
-This repository contains textual SLURP data and some additional resources allowing to replicate the results published in the paper. 
+This repository contains textual SLURP data and some additional resources allowing to replicate the results published in our [EMNLP 2020 paper](https://www.aclweb.org/anthology/2020.emnlp-main.588.pdf). 
 
 ## Getting data
 
 1. Textual annotations are part of this repository and can be found under `dataset/slurp/` directory
-2. To download the corresponding acoustic data, run `scripts/download_audio.sh` script (need around 6GB of disk space)
+2. To download the corresponding acoustic data, run `scripts/download_audio.sh` script (need around 6GB of disk space). Data is kindly hosted by [Zenodo.org](https://zenodo.org/record/4274930) - an open science sharing platform.
 
 ## Brief overview
 
