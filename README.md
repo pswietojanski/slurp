@@ -7,6 +7,12 @@ This repository contains textual SLURP data and some additional resources allowi
 1. Textual annotations are part of this repository and can be found under `dataset/slurp/` directory
 2. To download the corresponding acoustic data, run `scripts/download_audio.sh` script (need around 6GB of disk space). Data is kindly hosted by [Zenodo.org](https://zenodo.org/record/4274930) - an open science sharing platform.
 
+## Further results
+
+Please feel free to get in touch when you obtained any interesting results on SLURP (and they are publicly available, either as a paper or some other form like blogs, etc.). We are happy to link to them from here.
+
+1. Results for end-to-end architecture by Loren Lugosch: https://lorenlugosch.github.io/posts/2020/12/slurp/
+
 ## Brief overview
 
 
