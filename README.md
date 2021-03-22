@@ -11,7 +11,8 @@ This repository contains textual SLURP data and some additional resources allowi
 
 Please feel free to get in touch if you obtain any interesting results on SLURP (and they are publicly available, either as a paper or some other form like blogs, etc.). We are happy to link to them from here.
 
-1. Results for end-to-end architecture by Loren Lugosch: [https://lorenlugosch.github.io/posts/2020/12/slurp](https://lorenlugosch.github.io/posts/2020/12/slurp/)
+1. SLURP for end-to-end architecture by Loren Lugosch: [https://lorenlugosch.github.io/posts/2020/12/slurp](https://lorenlugosch.github.io/posts/2020/12/slurp/)
+1. SLURP has now an end-to-end [recipe](https://github.com/speechbrain/speechbrain/tree/main/recipes/SLURP) in [SpeechBrain](https://speechbrain.github.io/) toolkit 
 
 ## Brief overview
 
