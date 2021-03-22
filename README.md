@@ -11,11 +11,9 @@ This repository contains textual SLURP data and some additional resources allowi
 
 Please feel free to get in touch if you obtain any interesting results on SLURP (and they are publicly available, either as a paper or some other form like blogs, etc.). We are happy to link to them from here.
 
-1. SLURP for end-to-end architecture by Loren Lugosch: [https://lorenlugosch.github.io/posts/2020/12/slurp](https://lorenlugosch.github.io/posts/2020/12/slurp/)
-1. SLURP has now an end-to-end [recipe](https://github.com/speechbrain/speechbrain/tree/main/recipes/SLURP) in [SpeechBrain](https://speechbrain.github.io/) toolkit 
+1. SLURP has now an end-to-end [recipe](https://github.com/speechbrain/speechbrain/tree/main/recipes/SLURP) in [SpeechBrain](https://speechbrain.github.io/) toolkit. 
 
 ## Brief overview
-
 
 1. Each SLURP entry has the following structure. It contains NLU annotations and information allowing to link with audio files, as well as the corresponding metadata information. 
     * Note that `wer` (Word Error Rate) and `ent_wer` (Entity WER) fields for each recording were obtained automatically by scoring the ASR hypotheses against expected ground truths. In the paper we used all SLURP entries to train ASR systems (including ones where `wer>0`, but feel free to use this field to filter out less certain recordings.
