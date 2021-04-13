@@ -168,6 +168,12 @@ Please feel free to get in touch if you obtain any interesting results on SLURP 
 
 3. Audio data. Once downloaded you will find two directories `slurp_real` and `slurp_synth` under `audio` directory in the root of the repo. The files are compressed with Free Lossles Audio Codec [FLAC](https://en.wikipedia.org/wiki/FLAC). 
 
+## License
+
+This repo is covered by two types of licensing:
+1. Textual data (whatever is distributed via this repository) is released on CC BY 4.0
+1. Audio data (whatever is stored on Zenodo.org) is released on CC BY-NC 4.0 (one may obtain a less-strict license by contacting <info@emotech.co>)
+
 ## Citation
 
 If this dataset proves useful, please cite our corresponding [EMNLP 2020 paper](https://www.aclweb.org/anthology/2020.emnlp-main.588.pdf):
