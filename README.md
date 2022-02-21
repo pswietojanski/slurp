@@ -2,7 +2,7 @@
 
 This repository contains textual SLURP data and some additional resources allowing to replicate the results published in our [EMNLP 2020 paper](https://www.aclweb.org/anthology/2020.emnlp-main.588.pdf). 
 
-## Getting data
+## Getting the data
 
 1. Textual annotations are part of this repository and can be found under `dataset/slurp/` directory
 2. To download the corresponding acoustic data, run `scripts/download_audio.sh` script (need around 6GB of disk space). Data is kindly hosted by [Zenodo.org](https://zenodo.org/record/4274930) - an open science sharing platform.
@@ -12,6 +12,7 @@ This repository contains textual SLURP data and some additional resources allowi
 Please feel free to get in touch if you obtain any interesting results on SLURP (and they are publicly available, either as a paper or some other form like blogs, etc.). We are happy to link to them from here.
 
 1. SLURP has now an end-to-end [recipe](https://github.com/speechbrain/speechbrain/tree/main/recipes/SLURP) in [SpeechBrain](https://speechbrain.github.io/) toolkit. 
+2. SLURP has now an end-to-end recipe in [ESPNet](https://github.com/espnet/espnet) toolkit. See the corresponding paper [here](https://arxiv.org/pdf/2111.14706.pdf).
 
 ## Brief overview
 
