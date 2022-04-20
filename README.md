@@ -7,12 +7,13 @@ This repository contains textual SLURP data and some additional resources allowi
 1. Textual annotations are part of this repository and can be found under `dataset/slurp/` directory
 2. To download the corresponding acoustic data, run `scripts/download_audio.sh` script (need around 6GB of disk space). Data is kindly hosted by [Zenodo.org](https://zenodo.org/record/4274930) - an open science sharing platform.
 
-## Further results
+## Further results / resources
 
 Please feel free to get in touch if you obtain any interesting results on SLURP (and they are publicly available, either as a paper or some other form like blogs, etc.). We are happy to link to them from here.
 
 1. SLURP has now an end-to-end [recipe](https://github.com/speechbrain/speechbrain/tree/main/recipes/SLURP) in [SpeechBrain](https://speechbrain.github.io/) toolkit. 
 2. SLURP has now an end-to-end recipe in [ESPNet](https://github.com/espnet/espnet) toolkit. See the corresponding paper [here](https://arxiv.org/pdf/2111.14706.pdf).
+3. Want to try (text-based portion) of SLURP in a multi-lingual setting? Please check The MASSIVE dataset by Alexa@Amazon - a localization of SLURP to 50 typologically diverse languages. More details: [blog](https://www.amazon.science/blog/amazon-releases-51-language-dataset-for-language-understanding), [paper](https://arxiv.org/abs/2204.08582) and [repo](https://github.com/alexa/massive). 
 
 ## Brief overview
 
